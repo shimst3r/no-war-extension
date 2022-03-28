@@ -1,0 +1,29 @@
+{
+  "name": "no_war_extension",
+  "version": "1.0.0",
+  "description": "content moderation for replacing war images on websites",
+  "scripts": {
+    "build": "parcel build manifest.json",
+    "open:chromium": "web-ext run --start-url en.wikipedia.org/wiki/World_War_II --target chromium --source-dir ./dist/ ",
+    "open:firefox": "web-ext run --start-url en.wikipedia.org/wiki/World_War_II --target firefox-desktop --source-dir ./dist/ ",
+    "start:chromium": "npm run build && npm run open:chromium",
+    "start:firefox": "npm run build && npm run open:firefox",
+    "start": "npm run start:firefox"
+  },
+  "author": "Nils Müller",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/config-webextension": "^2.3.2",
+    "buffer": "^6.0.3",
+    "eslint": "^8.11.0",
+    "parcel": "^2.3.2",
+    "prettier": "2.6.0",
+    "process": "^0.11.10",
+    "web-ext": "^6.7.0",
+    "webextension-polyfill": "^0.8.0"
+  },
+  "dependencies": {
+    "@tensorflow-models/mobilenet": "^2.1.0",
+    "@tensorflow/tfjs": "^3.14.0"
+  }
+}
