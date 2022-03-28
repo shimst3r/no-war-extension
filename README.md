@@ -1,6 +1,6 @@
 # NO WAR Extension
 
-NO WAR Extension is a cross-platform browser extension for filtering war-related images. It is based on [TensorFlow.js](https://www.tensorflow.org/js) and the [MobileNetV2](https://arxiv.org/abs/1801.04381) architecture.
+NO WAR Extension is a cross-platform browser extension for filtering war-related images. It is based on [TensorFlow.js](https://www.tensorflow.org/js) and the [MobileNetV2](https://arxiv.org/abs/1801.04381) architecture. All predictions are done in-browser and don't touch any servers!
 
 ## How to run
 
